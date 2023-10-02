@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/sscard/assets/styles/main.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bwip-js/3.0.4/bwip-js-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jsbarcode/3.11.5/JsBarcode.all.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+	<link rel="shortcut icon" href="/sscard/assets/images/logo.png">
+	<title>Membership Card</title>
+</head>
+
+<body>
+<div id="customerdtl-crm-print-club" class="crm-container main-content-container">
+	<div id="customerdtl-crm-print-club" class="crm-container">
+		<div id="print-div">
+			<div class="float-child">
+        <span id="logo">
+          <img id="shoot-straight" src="/sscard/assets/images/logo.png" alt="Logo">
+        </span>
+			</div>
+			<div class="float-child">
+				<span id="photo"></span>
+			</div>
+		</div>
+		<div>
+			<span id="name">JOHN SMITH</span>
+		</div>
+		<div>
+			<span id="clubid">Member ID #C12345</span>
+		</div>
+		<div>
+			<span id="issueDate">Issue Date: 10/22/2021</span>
+		</div>
+		<div id="barcode-div">
+      <span id='barcode-span'>
+        <svg id="barcode"></svg>
+      </span>
+		</div>
+	</div>
+	<div id="abc">
+		<!-- Popup Div Starts Here -->
+		<div id="popupContact">
+			<!-- Contact Us Form -->
+			<div id="form" name="form" action="" enctype="multipart/form-data" method="POST">
+				<h2>Member Info</h2>
+				<hr>
+				<input id="formname" name="name" placeholder="Customer Name" type="text">
+				<input id="memberId" name="text" placeholder="Club ID# (e.g. C12345)" type="text">
+				<input id="issue" name="text" type="text" placeholder="Issue Date MM/DD/YYYY">
+				<button class="crmBtn" onclick="fillOutCard()" type="submit" id="submit">Generate Card</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="buttons">
+	<div id="crmbuttons">
+		<button class="crmBtn exclude-buttons" id="open_camera" onclick="openCamera()" type="button">
+			Open Camera
+		</button>
+		<button class="crmBtn exclude-buttons" id="my_camera" onClick="take_snapshot()" type="button">
+			Take Picture
+		</button>
+		<button class="crmBtn exclude-buttons" id="popup" onclick="div_show()" type="button">
+			Customer Info
+		</button>
+		<button class="crmBtn exclude-buttons" id="printButton" onclick="printPage()" type="button">
+			Print
+		</button>
+	</div>
+</div>
+
+<div id="template-div">
+	<div id="temp-header">
+		<h2>Family Membership</h2>
+	</div>
+	<hr>
+	<a href="/sscard/assets/pages/family.html" target="_blank">
+		<button class="crmBtn exclude-buttons" id="template" type="button">
+			Generate Family Membership Card
+		</button>
+	</a>
+</div>
+
+<script src="/sscard/assets/scripts/card.js"></script>
+
+</body>
+</html>

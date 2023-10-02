@@ -1,0 +1,205 @@
+@media print {
+    div#crmbuttons {
+        display: none;
+    }
+}
+
+div#family-div{
+    width: 450px;
+    height: auto
+ }
+
+div.float-child{
+    text-align: center;
+}
+div#fam-head {
+    text-align: center;
+}
+
+h2 {
+    line-height:0%;
+}
+
+#form h2 {
+    font-size: 22px;
+    padding:20px 35px;
+    font-family:georgia,serif;
+    font-style:italic;
+    color:#323131;
+    letter-spacing:0;
+    line-height:1.429em;
+    text-align:center;
+}
+
+#crmbuttons {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed for spacing */
+}
+
+/* Add margin to create space between buttons */
+#crmbuttons button {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+/* Remove margin from the last button to prevent extra space */
+#crmbuttons button:last-child {
+    margin-right: 0;
+}
+
+h4 {
+    line-height:0%
+}
+
+h3 {
+    line-height:0%
+}
+
+div#print-div {
+     text-align: center;
+}
+
+#submitBtn {
+    margin: 20px auto 0;  /* This adds 20px top margin */
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+div#family-popup #submitBtn {
+    margin: 20px auto 0;
+    display: block;
+}
+
+div#crmbuttons {
+    padding-top: 3%
+}
+
+button.crmBtn{
+    width: 50%;
+    height: 50px;
+    box-shadow: 0 3px 6px rgba(135, 130, 130), 0 3px 6px rgba(255,255,255,.4),
+        inset 0 -2px 5px 1px rgba(68,68,68),
+        inset 0 -1px 1px 3px rgba(255,255,255);
+        border: 1px solid #525251;
+        color: rgb(40,39,39);
+        transition: all .2s ease-in-out;
+        background-position:center;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 1px #c9c9c9, $hl;
+        background:
+            conic-gradient(
+                  #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+                  #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8,
+                  #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf,
+                  #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5,
+                  #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd,
+                  #c4c4c4, #d9d9d9, #cecece, #c5c5c5,
+                  #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9,
+                  #d7d7d7) content-box, linear-gradient(#d4d4d4, #d4d4d4); padding-box, $sh;
+}
+
+button:after {
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:focus,
+button:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(155,155,155,0.19), 0 6px 6px rgba155,155,155,0.23),
+    inset 0 -2px 5px 1px #b17d10,
+    inset 0 -1px 1px 3px rgba(155,155,155,1);
+    color: rgba(0,0,0,.8);
+    cursor:pointer
+}
+
+div#family-popup {
+    max-width: 800px;
+    min-width: 300px;
+    max-height: 800px;
+    min-height: 600px;
+    top:0;
+    left:0;
+    display:none;
+    position:fixed;
+    overflow:hidden;
+    background-color:#fbfbfb;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(82, 82, 82,.4)
+}
+
+.form {
+    max-width:500px;
+    min-width:500px;
+    padding:10px 50px;
+    border:2px solid gray;
+    border-radius:10px;
+    font-family:raleway;
+    background-color:#313131
+}
+
+#form hr {
+    margin:10px -50px;
+    border:0;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+input[type=text] {
+    width:40%;
+    padding:10px;
+    margin-top:2%;
+    border:1px solid #ccc;
+    padding-left:40px;
+    font-size:16px;
+    font-family:raleway;
+    border:none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow:0 0 5px #666 inset;
+    -moz-box-shadow:0 0 5px #666 inset;
+    box-shadow:0 0 5px #666 inset;
+    text-indent:5px;
+}
+
+svg {
+    width:200px; /* you can use % */
+    height: auto;
+}
+
+#barcode-div{
+    height: 80px;
+    width: 100%;
+    padding-top: 2%
+}
+
+span#clubid {
+    text-align: left;
+    display: inline-block;
+}
+
+span#issueDate {
+    text-align: right;
+    display: inline-block;
+    padding-left: 15px
+}
+
+#formname2 {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    display: block;  /* Ensure the input is treated as a block element for centering */
+}
+
+
+img#shoot-straight {
+    height: 60px;
+    width: 200px;
+}

@@ -1,0 +1,453 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media all and (max-width:30em){
+    button.crmBtn{
+        display:inline-block;
+        margin:0.4em auto;
+    }
+}
+
+@media only screen
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	span#photo {
+		left: 80%
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	span#photo {
+		left: 18%
+	}
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+	span#photo {
+		left: 17%
+	}
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+	span#photo {
+		left: 80%
+	}
+}
+
+@media print {
+    #crmbuttons {
+        display: none;
+    }
+    div#template-div {
+        display: none;
+    }
+    div#buttons{
+        display: none;
+    }
+    span#photo {
+        left: 70%;
+    }
+    #photo {
+      left: 70%;
+          height: 125px;
+        width: 125px;
+     }
+    img#shoot-straight {
+        height: auto;
+    }
+    @page {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    svg {
+        width:200px; /* you can use % */
+        height: 50px;
+    }
+    body {
+         font-weight: bold;
+         padding-top: 10px;
+         padding-bottom: 72px ;
+         margin-left: 0;
+         left: 0;
+        }
+    .crm-container {
+        font-weight: bold;
+        padding-left: 0px;
+        margin-left: 0;
+        left: 0;
+        width: 450px;
+        height: 475px
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+#name {
+	font-size: 25px;
+}
+
+#clubid {
+	font-size: 20px;
+	
+}
+
+#issueDate {
+	font-size: 18px;
+	
+}
+
+.crm-container{
+    width: 450px;
+    height: auto
+ }
+
+ div#buttons {
+    width: 450px;
+    height: auto
+ }
+
+#crmbuttons{
+    width: 450px;
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between; /* Adjust as needed for spacing */
+}
+/* Add margin to create space between buttons */
+#crmbuttons button {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.crmBtn{
+    width: 32%;
+    height: 50px;
+    display: inline-block;
+}
+
+button.sendBtn {
+	height: 50px;
+    margin: -20px -50px; 
+    position: relative;
+    left: 10%;
+}
+
+
+button#template{
+    margin-top:5%;
+    width: 100%;
+}
+
+button.crmBtn{
+    box-shadow: 0 3px 6px rgba(135, 130, 130), 0 3px 6px rgba(255,255,255,.4),
+    inset 0 -2px 5px 1px rgba(68,68,68),
+    inset 0 -1px 1px 3px rgba(255,255,255);
+    border: 1px solid #525251;
+    color: rgb(40,39,39);
+    transition: all .2s ease-in-out;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px #c9c9c9, $hl;
+    background:
+        conic-gradient(
+              #d7d7d7, #c3c3c3, #cccccc, #c6c6c6,
+              #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8,
+              #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf,
+              #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5,
+              #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd,
+              #c4c4c4, #d9d9d9, #cecece, #c5c5c5,
+              #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9,
+              #d7d7d7) content-box, linear-gradient(#d4d4d4, #d4d4d4);
+}
+
+button:after {
+    position: absolute;
+    opacity: 0;
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:focus,
+button:hover {
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(155,155,155,0.19), 0 6px 6px rgba155,155,155,0.23),
+    inset 0 -2px 5px 1px #b17d10,
+    inset 0 -1px 1px 3px rgba(155,155,155,1);
+    color: rgba(0,0,0,.8);
+}
+
+div#template-div {
+    width: 450px;
+    height: auto;
+    margin-top:1%;
+}
+
+div#temp-header {
+    text-align: center;
+    margin: auto;
+}
+
+div#line {
+    line-height:5%;
+}
+
+#logo{
+  line-height: 400%;
+}
+
+#name{
+  line-height: 200%;
+}
+
+#clubid{
+  line-height: 200%;
+}
+
+#expiration{
+  line-height: 200%;
+}
+#barcode-div{
+    height: 80px;
+    width: 100%
+}
+
+#barcode{
+	margin-bottom:10px;
+    text-align: right;
+	float:right
+}
+
+#photo {
+    float: right;
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 20px;
+    bottom: 20px;
+    left: 16%;
+    overflow: hidden;
+}
+
+img#shoot-straight {
+    width:20%; /* you can use % */
+    height: 20%;
+}
+
+svg {
+    width:200px; /* you can use % */
+    height: auto;
+}
+
+.float-container{
+    position: relative;
+}
+
+#abc {
+    width:550px;
+    height:600px;
+    top:0;
+    left:0;
+    display:none;
+    position:fixed;
+    background-color:#fbfbfb;
+    overflow:hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(82, 82, 82,.4)
+}
+
+.form {
+    max-width:500px;
+    min-width:500px;
+    padding:10px 50px;
+    border:2px solid gray;
+    border-radius:10px;
+    font-family:raleway;
+    background-color:#313131
+}
+
+img#close {
+    position:absolute;
+    right:-14px;
+    top:-14px;
+    cursor:pointer
+}
+
+div#popupContact {
+    position:absolute;
+    left:50%;
+    top:17%;
+    margin-left:-202px;
+    font-family:'Raleway',sans-serif;
+    padding-right: 15%
+}
+
+p {
+    margin-top:30px
+}
+
+h2 {
+     font-family:georgia,serif;font-size:18px;
+     font-style:italic;
+     color:#323131;
+     letter-spacing:0;
+     line-height:1.429em;
+     padding:0;
+     text-align:center;
+ }
+
+#form h2 {
+    padding:20px 35px;
+    margin:-10px -50px;
+    text-align:center;
+    border-radius:10px 10px 0 0
+}
+
+#form hr {
+    margin:10px -50px;
+    border-top:1px solid #ccc;
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+hr {
+    margin:10px -50px;
+    border-top:1px solid #ccc;
+    border:none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 1px solid #1f1209;
+    box-shadow: 0 20px 20px -20px #333;
+    margin: -50px auto 10px;
+}
+
+
+input[type=text] {
+    width:82%;
+    padding:10px;
+    margin-top:30px;
+    border:1px solid #ccc;
+    padding-left:40px;
+    font-size:16px;
+    font-family:raleway;
+    border:none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow:0 0 5px #666 inset;
+    -moz-box-shadow:0 0 5px #666 inset;
+    box-shadow:0 0 5px #666 inset;
+    text-indent:5px;
+}
+
+#name {
+    background-repeat:no-repeat;
+    background-position:5px 7px
+}
+#email {
+    background-repeat:no-repeat;
+    background-position:5px 7px
+}
+
+textarea {
+    background-repeat:no-repeat;
+    background-position:5px 7px;
+    width:82%;
+    height:95px;
+    padding:10px;
+    resize:none;
+    margin-top:30px;
+    border:1px solid #ccc;
+    padding-left:40px;
+    font-size:16px;
+    font-family:raleway;
+    margin-bottom:30px
+}
+
+#submit {
+    margin-top:30px;
+    text-decoration:none;
+    width:94%;
+    padding:10px 0;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:5px
+}
+
+span {
+    font-weight:300;
+}
+
+button {
+    cursor:pointer;
+}
+
+span#photo {
+    height: 125px;
+    width: 125px;
+}
+
+#name,
+#clubid,
+#issueDate {
+    font-weight: bold; /* Increase font weight */
+    color: #000000; /* Darker color (adjust as needed) */
+}
+
