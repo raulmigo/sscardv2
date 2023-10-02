@@ -7,63 +7,71 @@
 }
 
 @media only screen
-and (min-device-width : 320px)
+and (min-device-width : 320px) 
 and (max-device-width : 480px) {
 	span#photo {
-		padding-left: 300px;
+		left: 80%
 	}
 }
 
 /* Smartphones (landscape) ----------- */
-@media only screen
+@media only screen 
 and (min-width : 321px) {
 	span#photo {
-		padding-left: 200px;
+		left: 80%
 	}
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen
+@media only screen 
 and (max-width : 320px) {
 	span#photo {
-		padding-left: 300px;
+		left: 80%
 	}
 }
 
 /* iPads (portrait and landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
+@media only screen 
+and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 	span#photo {
-		padding-left: 120px;
+		left: 80%
 	}
 }
 
 /* iPads (landscape) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
 and (orientation : landscape) {
 	span#photo {
-		padding-left: 120px;
+		left: 80%
 	}
 }
 
 /* iPads (portrait) ----------- */
-@media only screen
-and (min-device-width : 768px)
-and (max-device-width : 1024px)
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
 and (orientation : portrait) {
 	span#photo {
-		padding-left: 120px;
+		left: 80%
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	span#photo {
+		left: 18%
 	}
 }
 
 /* Large screens ----------- */
-@media only screen
+@media only screen 
 and (min-width : 1824px) {
 	span#photo {
-		padding-left: 100px;
+		left: 17%
 	}
 }
 
@@ -72,9 +80,10 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 	span#photo {
-		padding-left: 200px;
+		left: 80%
 	}
 }
+
 
 @media print {
     #crmbuttons {
