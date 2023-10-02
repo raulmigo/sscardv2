@@ -18,7 +18,7 @@ and (max-device-width : 480px) {
 @media only screen
 and (min-width : 321px) {
 	span#photo {
-		padding-left: 300px;
+		padding-left: 200px;
 	}
 }
 
@@ -72,7 +72,7 @@ and (min-width : 1824px) {
 only screen and (-webkit-min-device-pixel-ratio : 1.5),
 only screen and (min-device-pixel-ratio : 1.5) {
 	span#photo {
-		left: 80%
+		padding-left: 200px;
 	}
 }
 
