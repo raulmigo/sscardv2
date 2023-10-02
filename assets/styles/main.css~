@@ -14,43 +14,13 @@ and (max-device-width : 480px) {
 	}
 }
 
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
+@media only screen
+and (min-device-width : 481px) 
+and (max-device-width : 1823px) {
 	span#photo {
-		left: 80%
+		padding-left: 300px;
 	}
 }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-	span#photo {
-		left: 80%
-	}
-}
-
 
 /* Large screens ----------- */
 @media only screen 
@@ -68,7 +38,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
 		padding-left: 300px;
 	}
 }
-
 
 @media print {
     #crmbuttons {
