@@ -1,89 +1,3 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media all and (max-width:30em){
-    button.crmBtn{
-        display:inline-block;
-        margin:0.4em auto;
-    }
-}
-
-@media only screen
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-	span#photo {
-		left: 80%
-	}
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-	span#photo {
-		left: 18%
-	}
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-	span#photo {
-		left: 17%
-	}
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-	span#photo {
-		left: 80%
-	}
-}
-
 @media print {
     #crmbuttons {
         display: none;
@@ -268,20 +182,20 @@ div#line {
 	float:right
 }
 
+.flex-container {
+    display: flex;
+    align-items: center;  /* This centers the items vertically */
+    justify-content: space-between; /* This places max space between the items */
+}
+
 #photo {
-    float: right;
-    position: absolute;
     height: 125px;
     width: 125px;
-    top: 20px;
-    bottom: 20px;
-    left: 16%;
-    overflow: hidden;
 }
 
 img#shoot-straight {
-    width:20%; /* you can use % */
-    height: 20%;
+    width:100px; /* you can use % */
+    height: 100px;
 }
 
 svg {
