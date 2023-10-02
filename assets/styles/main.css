@@ -18,7 +18,7 @@ and (max-device-width : 480px) {
 @media only screen
 and (min-width : 321px) {
 	span#photo {
-		padding-left: 300px;
+		padding-left: 200px;
 	}
 }
 
