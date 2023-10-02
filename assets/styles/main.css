@@ -14,14 +14,6 @@ and (max-device-width : 480px) {
 	}
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-	span#photo {
-		padding-left: 200px;
-	}
-}
-
 /* Smartphones (portrait) ----------- */
 @media only screen 
 and (max-width : 320px) {
@@ -56,14 +48,6 @@ and (max-device-width : 1024px)
 and (orientation : portrait) {
 	span#photo {
 		left: 80%
-	}
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-	span#photo {
-		left: 18%
 	}
 }
 
