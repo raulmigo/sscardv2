@@ -1,45 +1,3 @@
-/* Smartphones (portrait and landscape) ----------- */
-@media all and (max-width:30em){
-    button.crmBtn{
-        display:inline-block;
-        margin:0.4em auto;
-    }
-}
-
-@media only screen
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	span#photo {
-		left: 80%
-	}
-}
-
-@media only screen
-and (min-device-width : 481px) 
-and (max-device-width : 1823px) {
-	span#photo {
-		padding-left: 300px;
-	}
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-	span#photo {
-		left: 17%
-	}
-}
-
-/* iPhone 4 ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-	span#photo {
-		padding-left: 300px;
-	}
-}
-
-
 @media print {
     #crmbuttons {
         display: none;
@@ -211,7 +169,7 @@ div#line {
 }
 
 #logo{
-  line-height: 400%;
+    line-height: 400%;
 }
 
 #name{
@@ -236,14 +194,15 @@ div#line {
 	float:right
 }
 
+.flex-container {
+    display: flex;
+    align-items: center;  /* This centers the items vertically */
+    justify-content: space-between; /* This places max space between the items */
+}
+
 #photo {
-    float: right;
-    position: absolute;
     height: 125px;
     width: 125px;
-    top: 20px;
-    bottom: 20px;
-    overflow: hidden;
 }
 
 img#shoot-straight {
