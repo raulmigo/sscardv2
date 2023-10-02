@@ -79,14 +79,14 @@
 		<h2>Family Membership</h2>
 	</div>
 	<hr>
-	<a href="/sscard/assets/pages/family.html" target="_blank">
+	<a href="/sscardv2/assets/pages/family.html" target="_blank">
 		<button class="crmBtn exclude-buttons" id="template" type="button">
 			Generate Family Membership Card
 		</button>
 	</a>
 </div>
 
-<script src="/sscard/assets/scripts/card.js"></script>
+<script src="/sscardv2/assets/scripts/card.js"></script>
 
 </body>
 </html>
