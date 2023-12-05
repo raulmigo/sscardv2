@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Member Card</title>
+<link href="main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            <img src="logo.png" alt="Logo" class="logo">
+            <div class="member-info">
+                <p><span class="bold-text">Member #:</span><span id="displayMemberNumber">12345678</span></p>
+    			<p><span class="bold-text">Issue Date:</span><span id="displayIssueDate">12/04/2023</span></p>
+            </div>
+        </div>
+        <div class="name-container">
+            <p><span id="displayName">Member Full Name</span></p>
+        </div>
+        <div class="contact-info">
+			<p class="emergency">Emergency: 855-253-4252</p>
+			<p class="office">Office: 407-410-6913</p>
+        </div>
+		<!-- Add Edit Button -->
+		<div class="button-container">
+			<button id="editCustomerInfo" onclick="editCustomerInfo()">Edit Customer Info</button>
+			<button id="printButton" onclick="printCard()">Print</button>
+		</div>
+	</div>
+	
+	<!-- The popup overlay -->
+	<div id="popupOverlay" class="popup-overlay">
+	<!-- The popup content -->
+		<div class="popup-content">
+			<div class="input-group">
+				<input type="text" id="editMemberNumber" placeholder="Edit Member #">
+			</div>
+			<div class="input-group">
+				<input type="text" id="editIssueDate" placeholder="Edit Issue Date">
+			</div>
+			<div class="input-group">
+				<input type="text" id="editCustomerName" placeholder="Edit Customer Name">
+			</div>
+			<button id="saveCustomerInfo" onclick="saveCustomerInfo()">Save</button>
+		</div>
+  	</div>
+
+	<script type="text/javascript" src="card.js"></script>
+
+</body>
+</html>

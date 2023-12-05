@@ -1,0 +1,176 @@
+@media print {
+    /* Hide the entire container of the buttons */
+    .button-container {
+      display: none !important; /* Adding !important to ensure override */
+    }
+  
+    /* If the buttons are not within a container or need individual hiding */
+    #editCustomerInfo, #printButton {
+      display: none !important;
+    }
+  }
+  
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 350px; /* Adjust the width as per your requirement */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    height: 80px; /* Adjust as per your logo's aspect ratio */
+    margin-right: 100px;
+}
+
+.member-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px; /* Add bottom margin to the first p element */
+    margin-top: 10px;
+}
+
+
+.name-container {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.name-container p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.bold-text {
+    font-weight: bold; /* Makes the text bold */
+    color: #000; /* Makes the text darker; #000 is the hex code for black */
+}
+
+.contact-info p:first-child {
+    margin-bottom: 10px; /* Adds space after the first paragraph */
+}
+
+/* Style the form elements if they are not hidden */
+#customerEditForm input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 15px; /* Add some space above the button */
+    background-color: #3e8be9; /* Bootstrap primary button color for example */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display:block;
+    margin: 25px auto 0px auto;
+}
+
+/* The styles for the popup overlay */
+.popup-overlay {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    display: none; /* Hide by default */
+    justify-content: center; /* Center the popup content horizontally */
+    align-items: center; /* Center the popup content vertically */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  /* The styles for the popup content */
+  .popup-content {
+    width: 350px; 
+    height: 300px;
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center align the children horizontally */
+    justify-content: space-around; /* Evenly space out the children */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    z-index: 1001; /* Ensure it's above the semi-transparent overlay */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add some shadow for better visibility */
+}
+
+.input-group {
+    width: 100%;
+    margin-bottom: 10px; /* Add some space between the input groups */
+}
+
+/* Style for the individual input fields */
+.input-group input {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin: 5px 0; /* Spacing above and below the input */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+  /* The styles for the Save button */
+  #saveCustomerInfo {
+    padding: 10px 20px;
+    background-color: #3e8be9; /* Example color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Ensures the button is a block-level element */
+    margin-top: 20px; /* Space above the button */
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons container */
+    align-items: center; /* Align the buttons vertically */
+    gap: 10px; /* Spacing between buttons */
+    margin-top: 20px; /* Space above the button container */
+}
+
+/* Style for both buttons */
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Adjust the font size as needed */
+}
